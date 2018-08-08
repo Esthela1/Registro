@@ -1,0 +1,37 @@
+{
+  "name": "registro",
+  "version": "0.1.0",
+  "description": "Solucion a la problematica del registro de usuarios en un CoWorking",
+  "main": "index.js",
+  "scripts": {
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js",
+    "test": "npm run test-node && npm run test-browser"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "htmlhint": "^0.9.13",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1",
+    "opener": "^1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrisiaCastrejon/Registro.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML5",
+    "Firebase"
+  ],
+  "author": "Brisia Castrejon, Esthela Salas, DanielaGutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrisiaCastrejon/Registro/issues"
+  },
+  "homepage": "https://github.com/BrisiaCastrejon/Registro#readme"
+}
