@@ -1,12 +1,16 @@
 // Initialize Firebase
-firebase.initializeApp({
+let config = {
   apiKey: "AIzaSyAyS3BZ0O9m_GMM_asf4g77mEHFuNZn2iI",
   authDomain: "registro-de-usuarios-8ca22.firebaseapp.com",
+  databaseURL: "https://registro-de-usuarios-8ca22.firebaseio.com",
   projectId: "registro-de-usuarios-8ca22",
-});
+  storageBucket: "registro-de-usuarios-8ca22.appspot.com",
+  messagingSenderId: "1017172818806"
+};
+firebase.initializeApp(config);
 
-// Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
+ // Get a reference to the database service
+ let database = firebase.database();
 
 //Add data
 function guardar(){
@@ -15,24 +19,26 @@ function guardar(){
   let name = document.getElementById("name").value;
   let visitnt = document.getElementById("visit").value;
 
-  db.collection("users").add({
+let usuario = {
+
     visit: name1,
     doing: conpan,
     name2: name,
     visiting: visitnt
 
-  })
-  .then(function(docRef) {
-    console.log("Document written with ID: ", docRef.id);
-    document.getElementById("visitWorker").value = "";
+  }
+  database.ref("visitors").set(usuario); 
+  document.getElementById("visitWorker").value = "";
     document.getElementById("company").value = "";
     document.getElementById("name").value = "";
-    document.getElementById("visit").value = "";
-  })
-  .catch(function(error) {
-    console.error("Error adding document: ", error);
-  }); 
+    document.getElementById("visit").value = "";   
 }
+
+
+    
+  
+
+
 
 
 //
