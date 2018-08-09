@@ -1,26 +1,58 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8" />
+    <!-- Required meta tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Registro de Usuarios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Stylesheet-->
     <link rel="stylesheet" type="text/css" media="screen" href="./styles/main.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <title>Registro de Usuarios</title>
 </head>
+
 <body>
-    <form>
-      <!--Primer formulario-->
-        Nombre completo del visitante:<br>
-        <input type="text" name="visitorname">
-        <br>
-        A quien visitas?:<br>
-        <input type="text" name="fullname">
-        <br><br>
-        <input type="submit" value="Submit">
+    <!--formulario-->
+    <div class="container">
+        
+            <h1>Registro de recepción</h1>
+            
+            ¿Eres visitante o co-worker?
+            <br>
+            <input type="text" id="visitWorker" class="form-control">
+            <br> Empresa
+            <br>
+            <input type="text" id="company" placeholder="Nombre de la empresa" class="form-control">
+            <br> Nombre completo
+            <br>
+            <input type="text" id="name" placeholder="Escribe tu nombre como se muestra en tu identificación" class="form-control">
+            <br> ¿A quien visitas?(Llenar solo en caso de ser visitante)
+            <br>
+            <input type="text" id="visit" placeholder="Nombre" class="form-control">
+            <br>
 
-    </form>
-    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
-    <script src="./scripts/main.js"></script>   
+    </div>
 
+    
+    <!--Firestore-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <!--JavaScript -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/credentials.js"></script>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
