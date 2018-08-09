@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/BrisiaCastrejon/Registro/issues"
   },
-  "homepage": "https://github.com/BrisiaCastrejon/Registro#readme"
+  "homepage": "https://github.com/BrisiaCastrejon/Registro#readme",
+  "directories": {
+    "test": "test"
+  }
 }
