@@ -18,26 +18,24 @@
 <body>
     <!--formulario-->
     <div class="container">
-        
-            <h1>Registro de recepción</h1>
-            
-            ¿Eres visitante o co-worker?
-            <br>
-            <input type="text" id="visitWorker" class="form-control">
-            <br> Empresa
-            <br>
-            <input type="text" id="company" placeholder="Nombre de la empresa" class="form-control">
-            <br> Nombre completo
-            <br>
-            <input type="text" id="name" placeholder="Escribe tu nombre como se muestra en tu identificación" class="form-control">
-            <br> ¿A quien visitas?(Llenar solo en caso de ser visitante)
-            <br>
-            <input type="text" id="visit" placeholder="Nombre" class="form-control">
-            <br>
+
+        <h1>Registro de recepción</h1>
+
+        ¿Eres visitante o co-worker?
+
+        <input type="text" id="visitWorker" class="form-control my-1"> Empresa
+
+        <input type="text" id="company" placeholder="Nombre de la empresa" class="form-control my-1"> Nombre completo
+
+        <input type="text" id="name" placeholder="Escribe tu nombre como se muestra en tu identificación" class="form-control my-1"> ¿A quien visitas?(Llenar solo en caso de ser visitante)
+
+        <input type="text" id="visit" placeholder="Nombre" class="form-control my-1">
+
+        <button class="btn btn-info" id="buttonsubmit" onclick="guardar()">Guardar</button>
 
     </div>
 
-    
+
     <!--Firestore-->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
