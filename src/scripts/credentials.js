@@ -1,4 +1,3 @@
-// Initialize Firebase
 let config = {
   apiKey: "AIzaSyAyS3BZ0O9m_GMM_asf4g77mEHFuNZn2iI",
   authDomain: "registro-de-usuarios-8ca22.firebaseapp.com",
@@ -8,42 +7,30 @@ let config = {
   messagingSenderId: "1017172818806"
 };
 firebase.initializeApp(config);
-
- // Get a reference to the database service
- let database = firebase.database();
-
-//Add data
-function guardar(){
-  let name1 = document.getElementById("visitWorker").value;
-  let conpan = document.getElementById("company").value;
-  let name = document.getElementById("name").value;
-  let visitnt = document.getElementById("visit").value;
-
-let usuario = {
-
-    visit: name1,
-    doing: conpan,
-    name2: name,
-    visiting: visitnt
-
-  }
-  database.ref("visitors").set(usuario); 
-  document.getElementById("visitWorker").value = "";
-    document.getElementById("company").value = "";
-    document.getElementById("name").value = "";
-    document.getElementById("visit").value = "";   
-}
-
-
-    
-  
-
-
-
-
-//
-
-
-
-
-
+// elementos del DOM
+let visitor = document.getElementById('visitors');
+let worker = document.getElementById('workers');
+let containerButton = document.getElementById('containerButton');
+let formVisit = document.getElementById('formVisit');
+let formWorker = document.getElementById('formWorker');
+// formulario de visitas
+let companyVisit = document.getElementById('companyVisit');
+let nameVisitor = document.getElementById('nameVisitor');
+let whoVisit = document.getElementById('whoVisit');
+let emailVisit = document.getElementById('emailVisit');
+let saveVisitor = document.getElementById('saveVisitor');
+// formulario de workers
+let companyWorker = document.getElementById('companyWorker');
+let nameWorker = document.getElementById('nameWorker');
+let saveWorker = document.getElementById('saveWorker');
+// variables para Firebase
+let database = firebase.database();
+let storage = firebase.storage();
+// elementos del DOM segunda vista 
+let buttonsInit = document.getElementById('buttonsInit');
+let singIn = document.getElementById('singIn');
+let initFastAccess = document.getElementById('initFastAccess');
+let formAdmin = document.getElementById('formAdmin');
+let adminMail = document.getElementById('adminMail');
+let adminPassword = document.getElementById('adminPassword');
+let openPage = document.getElementById('openPage');
