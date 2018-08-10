@@ -26,3 +26,11 @@ let saveWorker = document.getElementById('saveWorker');
 // variables para Firebase
 let database = firebase.database();
 let storage = firebase.storage();
+// elementos del DOM segunda vista 
+let buttonsInit = document.getElementById('buttonsInit');
+let singIn = document.getElementById('singIn');
+let initFastAccess = document.getElementById('initFastAccess');
+let formAdmin = document.getElementById('formAdmin');
+let adminMail = document.getElementById('adminMail');
+let adminPassword = document.getElementById('adminPassword');
+let openPage = document.getElementById('openPage');
