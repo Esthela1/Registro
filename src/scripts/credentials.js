@@ -24,8 +24,8 @@ let companyWorker = document.getElementById('companyWorker');
 let nameWorker = document.getElementById('nameWorker');
 let saveWorker = document.getElementById('saveWorker');
 // variables para Firebase
-let database = firebase.database();
-let storage = firebase.storage();
+let database = firebase.database(); // base de datos en tiempo real
+let storage = firebase.storage(); // base de datos para archivos
 // elementos del DOM segunda vista 
 let buttonsInit = document.getElementById('buttonsInit');
 let singIn = document.getElementById('singIn');
@@ -34,3 +34,8 @@ let formAdmin = document.getElementById('formAdmin');
 let adminMail = document.getElementById('adminMail');
 let adminPassword = document.getElementById('adminPassword');
 let openPage = document.getElementById('openPage');
+// botones para volver 
+let homePage = document.getElementById('homePage');
+let goHome = document.getElementById('goHome');
+let goHomeV = document.getElementById('goHomeV');
+let goHomeW = document.getElementById('goHomeW');
