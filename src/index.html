@@ -15,6 +15,31 @@
         <title>Registro de Usuarios</title>
     </head>
 <body>
-    <script src="scripts/index.js"></script>    
+    <main>
+        <section class="container"> 
+            <section class="row col-12 justify-content-center">
+                <h1>Fast-Access</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis ab et consequuntur quisquam veniam, ad aliquid, impedit dolorum molestiae, placeat debitis! Architecto harum voluptatem officiis molestias rerum, fuga earum excepturi.</p>
+                <section id="buttonsInit">
+                    <button type="button" class="btn btn-primary" id="singIn">Iniciar sesión</button>
+                    <button type="button" class="btn btn-primary" id="initFastAccess">Registrar Visita</button>
+                </section>
+            </section>
+        </section>
+    </main>
+    <section class="container">
+        <section class="row col-12 justify-content-center">
+            <article id="formAdmin" class="formulario-admin">
+                <h6>Inicio de sesión</h6>
+                <input type="text" id="adminMail" placeholder="correo@mail.com" class="form-control my-1"> 
+                <input type="text" id="adminPassword" placeholder="**********" class="form-control my-1"> 
+                <button class="btn btn-info" id="openPage">Entrar</button>            
+            </article>
+        </section>
+    </section>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>    
+    <script src="scripts/credentials.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
+
 </html>
