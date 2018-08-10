@@ -1,11 +1,26 @@
+homePage.addEventListener('click', event =>{
+  location.href = '../index.html'
+});
+
 visitor.addEventListener('click', event => {
   containerButton.style.display = "none";
   formVisit.style.display = "block";
-})
+});
+
 worker.addEventListener('click', event => {
   containerButton.style.display = "none";
   formWorker.style.display = "block";
-})
+});
+
+goHomeV.addEventListener('click', event => {
+  containerButton.style.display = "block";
+  formVisit.style.display = "none";
+});
+
+goHomeW.addEventListener('click', event => {
+  containerButton.style.display = "block";
+  formWorker.style.display = "none";
+});
 saveVisitor.addEventListener('click', event => {
   const valueCompanyV = companyVisit.value;
   const valueNameV = nameVisitor.value;
@@ -29,8 +44,11 @@ saveVisitor.addEventListener('click', event => {
     document.getElementById('whoVisit').value = '';
     document.getElementById('emailVisit').value = '';
     document.getElementById('saveVisitor').value = '';
-}
-})
+   containerButton.style.display = "block";
+   formVisit.style.display = "none";
+};
+});
+
 saveWorker.addEventListener('click', event => {
   const valuecompanyW =companyWorker.value;
   const valuenameW = nameWorker.value;
@@ -43,9 +61,11 @@ saveWorker.addEventListener('click', event => {
   let worker = {
     workerName:valuenameW,
     workerCompany:valuecompanyW
-  }
+  };
   database.ref(`Workers/${registerWorkerKey}`).set(worker);
   document.getElementById('companyWorker').value = '';
   document.getElementById('nameWorker').value = '';
- }
+  containerButton.style.display = "block";
+  formWorker.style.display = "none";
+ };
 });

@@ -2,9 +2,15 @@ singIn.addEventListener('click', event => {
   buttonsInit.style.display = 'none';
   formAdmin.style.display = 'block';  
 })
+
+goHome.addEventListener('click', event => {
+  buttonsInit.style.display = 'block';
+  formAdmin.style.display = 'none';
+});
+
 openPage.addEventListener('click', event => {
   if (adminMail.value == "worker@mail.com" && adminPassword.value == "123456") {
-    window.location.href = 'views/view2.html';
+    location.href = 'views/view2.html';
   }else {
     adminMail.value = '';
     adminPassword.value = '';
@@ -13,6 +19,7 @@ openPage.addEventListener('click', event => {
     formAdmin.style.display = 'none';
   }
 })
+
 initFastAccess.addEventListener('click', event => {
-  window.location.href = 'views/view1.html'
+  location.href = 'views/view1.html'
 })
