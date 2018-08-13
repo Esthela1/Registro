@@ -7,6 +7,9 @@ let config = {
   messagingSenderId: "1017172818806"
 };
 firebase.initializeApp(config);
+//Inicializacion de storage (Almacenamiento de la fotografia)
+var defaultStorage = firebase.storage();
+var defaultDatabase = firebase.database();
 // elementos del DOM
 let visitor = document.getElementById('visitors');
 let worker = document.getElementById('workers');
