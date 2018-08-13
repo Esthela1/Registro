@@ -18,3 +18,7 @@ main {
     margin: 2% !important;
     color: #E4B043 !important;
 }
+button, html [type=button] {
+
+    background: #E4B043;
+}
