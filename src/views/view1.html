@@ -48,7 +48,12 @@
                         <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1"> 
                         <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1"> 
                         <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1"> 
-                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">            
+                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">
+
+                        
+                        <video id="player" controls autoplay></video>
+                        <button id="capture">Capturar</button>
+                        <canvas id="snapshot" width=320 height=240></canvas>
                         <button class="btn btn-info" id="saveVisitor">Registrar</button>
                         <br>
                         <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button>                
@@ -57,6 +62,11 @@
                         <h6>Registro de CoWorkers</h6>
                         <input type="text" id="companyWorker" placeholder="Nombre de la empresa" class="form-control my-1"> 
                         <input type="text" id="nameWorker" placeholder="Tu nombre completo" class="form-control my-1"> 
+
+                       
+                        <video id="player" controls autoplay></video>
+                        <button id="capture">Capturar</button>
+                        <canvas id="snapshot" width=320 height=240></canvas>
                         <button class="btn btn-info" id="saveWorker">Registrar</button>
                         <br>
                         <button class="btn btn-info" id="goHomeW"> <span class="icon-home"></span> Volver</button>                
@@ -71,6 +81,8 @@
     <script src="../scripts/credentials.js"></script>
     <script src="../scripts/register.js"></script>
 
+    <!--Scrip de camara-->
+    <script src="../scripts/cam.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
