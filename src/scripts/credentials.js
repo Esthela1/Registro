@@ -25,6 +25,9 @@ let camera = document.getElementById('camera');
 let saveVisitor = document.getElementById('saveVisitor');
 // variables para foto en JS
 let videoTracks;
+// variables para Firebase
+let database = firebase.database(); // base de datos en tiempo real
+let storage = firebase.storage(); // base de datos para archivos
 
 // elementos del DOM segunda vista 
 let buttonsInit = document.getElementById('buttonsInit');

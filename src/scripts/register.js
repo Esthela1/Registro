@@ -16,12 +16,15 @@ goHomeV.addEventListener('click', event => {
   formVisit.style.display = "none";
 });
 
+
 showCamera.addEventListener('click', event => {
   camera.style.display = 'block';
   let player = document.getElementById('player');
   let snapshotCanvas = document.getElementById('snapshot');
   let captureButton = document.getElementById('capture');
+
   let perrito = document.getElementById('perrito');
+
   let videoTracks;
 
 
@@ -29,6 +32,7 @@ showCamera.addEventListener('click', event => {
     // Attach the video stream to the video element and autoplay.
     player.srcObject = stream;
     videoTracks = stream.getVideoTracks();
+
 
   };
 
