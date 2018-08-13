@@ -1,0 +1,19 @@
+main {   
+   background-repeat: no-repeat; 
+   background-color: rgba();
+}
+
+#logo {
+    width: 700px;
+    height: 250px;
+} 
+
+#mesa {
+    width: 1000px;
+    height: 400px;
+    
+}
+
+button {
+    margin: 5%;
+}
