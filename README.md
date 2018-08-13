@@ -10,7 +10,9 @@ Sin embrago existe un problema  de digitalización en la mayoría de los Co-work
 Realicé 4 entrevistas : 2 a administradores, 1 como clienta incognita y una última a un usuario de coworkings.
 
 La primer entrevista fue a la administradora del Co-working llamado 3er Espacio.
-<img align="center" src="./imagenes/entrada3espacio.png" />
+
+<img align="center" src="./assets/imagenes/entrada3espacio.png" />
+
 Al entrar al edificio observamos que la administradora lleva de una manera poco práctica su registro de ingreso y egresos.
 
 Ella nos comenta que el problema son las pocas tarjetas con las que cuenta para la entrada al Co-working, también nos comentó lo mucho que le gustan las relaciones humanas que puede llegar a tener, otro parte de su trabajo es llevar esa hoja de ingresos a una hoja de cálculo  y ahí puede verificar el tiempo que lleva ya que hay uno que contratan por hora.
