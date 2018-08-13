@@ -1,16 +1,18 @@
-##Problema
+###Problema **
 
 En México se calcula que operan actualmente alrededor de 74 espacios de Co-working. El Co-working se centra en la creación de un espacio que fomente la colaboración, el carácter abierto, los conocimientos compartidos, la innovación y la experiencia del usuario.
 
 Sin embrago existe un problema  de digitalización en la mayoría de los Co-workings .
 
-##Investigación
+###Investigación **
 ·	Entrevista-Insights
 
 Realicé 4 entrevistas : 2 a administradores, 1 como clienta incognita y una última a un usuario de coworkings.
 
-La primer entrevista fue a la administradora del Co-working llamado 3er Espacio. Al entrar al edificio observamos que la administradora lleva de una manera poco práctica su registro de ingreso y egresos.
-(link de imagen de hoja de egresos)
+La primer entrevista fue a la administradora del Co-working llamado 3er Espacio.
+<img align="center" src="./imagenes/entrada3espacio.png" />
+Al entrar al edificio observamos que la administradora lleva de una manera poco práctica su registro de ingreso y egresos.
+
 Ella nos comenta que el problema son las pocas tarjetas con las que cuenta para la entrada al Co-working, también nos comentó lo mucho que le gustan las relaciones humanas que puede llegar a tener, otro parte de su trabajo es llevar esa hoja de ingresos a una hoja de cálculo  y ahí puede verificar el tiempo que lleva ya que hay uno que contratan por hora.
 
 INSIGHT DE LA ENTREVISTA
