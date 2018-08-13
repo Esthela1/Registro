@@ -1,7 +1,10 @@
-.formulario-workers {
+.formulario-visitors {
   display: none;
 }
-.formulario-visitors {
+#camera {
+  display: none;
+}
+#cameraW {
   display: none;
 }
 #camera {
