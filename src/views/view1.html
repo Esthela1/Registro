@@ -48,7 +48,15 @@
                         <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1"> 
                         <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1"> 
                         <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1"> 
-                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">            
+                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1"> 
+                        <button class="btn btn-outline-primary" id="showCamera"><span class="icon-camera3"></span> </button>
+
+                        <section id="camera">
+                            <video id="player" controls autoplay></video>
+                            <button id="capture">Capturar</button>
+                            <canvas id="snapshot" width=320 height=240></canvas>
+                        </section>
+           
                         <button class="btn btn-info" id="saveVisitor">Registrar</button>
                         <br>
                         <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button>                
@@ -57,6 +65,13 @@
                         <h6>Registro de CoWorkers</h6>
                         <input type="text" id="companyWorker" placeholder="Nombre de la empresa" class="form-control my-1"> 
                         <input type="text" id="nameWorker" placeholder="Tu nombre completo" class="form-control my-1"> 
+                        <button class="btn btn-outline-primary" id="showCameraW"><span class="icon-camera3"></span> </button>
+
+                        <section id="cameraW">
+                            <video id="playerW" controls autoplay></video>
+                            <button id="captureW">Capturar</button>
+                            <canvas id="snapshotW" width=320 height=240></canvas>
+                        </section>
                         <button class="btn btn-info" id="saveWorker">Registrar</button>
                         <br>
                         <button class="btn btn-info" id="goHomeW"> <span class="icon-home"></span> Volver</button>                

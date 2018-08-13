@@ -4,6 +4,12 @@
 .formulario-visitors {
   display: none;
 }
+#camera {
+  display: none;
+}
+#cameraW {
+  display: none;
+}
 .image-logo {
   width: 80%;
 }
