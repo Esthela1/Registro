@@ -15,7 +15,7 @@ La primer entrevista fue a la administradora del Co-working llamado 3er Espacio.
 
 Al entrar al edificio observamos que la administradora lleva de una manera poco práctica su registro de ingreso y egresos.
 
-<img align="center" src="src/assets/images/bitacora3.jpeg" />
+<img align="center" src="src/assets/images/bitacora3.jpeg" style="width: 60px"/>
 
 Ella nos comenta que el problema son las pocas tarjetas con las que cuenta para la entrada al Co-working, también nos comentó lo mucho que le gustan las relaciones humanas que puede llegar a tener, otro parte de su trabajo es llevar esa hoja de ingresos a una hoja de cálculo  y ahí puede verificar el tiempo que lleva ya que hay uno que contratan por hora.
 
@@ -32,7 +32,7 @@ Esta es para poder llevar un registro de quién entra o sale dependiendo la empr
 
  En el otro caso de que no pasen a este segundo filtro el administrador es el encargado de comunicarse con la persona , si la persona no reconoce al visitante , el visitado debe de quedarse ahí junto con el administrador y no pasar de la puerta para mayor seguridad. La bitácora ya no cuenta con hojas únicamente la guardan  para que los visitados puedan verificar que persona y cuántas han ido a visitarlos.
 
-<img align="center" src="src/assets/images/terminal2.jpeg.jpg" />
+<img align="center" src="src/assets/images/terminal2.jpg" />
 Insigths de la entrevista
 
 “Me gustaría poder modernizarme como otros co-workings, donde existe una mayor seguridad ya que me han dejado identificaciones falsas y no es un buen filtro”
@@ -41,7 +41,7 @@ Insigths de la entrevista
 
  La entrevista de incógnito realizada fue al Co-working llamado WE WORK ubicado en Insurgentes.
 
-<img align="center" src="src/assets/images/entrada we work.jpeg " />
+<img align="center" src="src/assets/images/entrada wework.jpeg " />
 
  Al entrar al edificio hay un primer filtro en el que con una bitácora dejas tu credencial y avisas a que empresa quieres ir.
 
@@ -85,12 +85,12 @@ INSIGHTS DE LA ENTREVISTA
 
 Como pudimos observar existe un rezago digital en dos Co-workings  pero al mismo tiempo, no quieren perder la parte humana pero si poder agilizar su proceso y que sea un proceso seguro para ellos estar tranquilos de que su trabajo está bien realizado.
 ·	Objetivos de la propuesta
-*..Brindar una app-web que les ayude a digitalizar su procesos.
- Poder obtener de manera rápida un registro de sus invitados.
- Obtener una foto para mayor seguridad sobre quien obtuvo el acceso.
- Dar rapidez a la fila para ingresos de empleados y visitantes.
- Poder verificar las personas a que han ingresado al edificio.
- Dar mayor rapidez a la comunicación de cuando llega el visitante al visitado.⋅⋅*
+ .Brindar una app-web que les ayude a digitalizar su procesos.
+ .Poder obtener de manera rápida un registro de sus invitados.
+ .Obtener una foto para mayor seguridad sobre quien obtuvo el acceso.
+ .Dar rapidez a la fila para ingresos de empleados y visitantes.
+ .Poder verificar las personas a que han ingresado al edificio.
+ .Dar mayor rapidez a la comunicación de cuando llega el visitante al visitado.⋅⋅*
 
 ·	Definir usuarios
 Maria es una joven de 31 años que trabaja en un co-working su empresa es una ....
@@ -110,7 +110,7 @@ Maria es una joven de 31 años que trabaja en un co-working su empresa es una ..
 
 ·	Logo
 
-![logo](assets/images/WhatsApp Image 2018-08-09 at 7.49.28 PM.jpeg)
+<img align="center" src="src/assets/images/WhatsApp Image 2018-08-09 at 7.52.52 PM.jpeg" />
 
 Color amarillo: utilizamos este color ya que queremos transmitir rapidez  y queremos tener un gran impacto en el ojo humano, este color logra hacer eso.
 color gris:  queremos transmitir seguridad y formalidad.
