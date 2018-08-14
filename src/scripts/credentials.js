@@ -1,3 +1,4 @@
+// Initialize Firebase
 let config = {
   apiKey: "AIzaSyAyS3BZ0O9m_GMM_asf4g77mEHFuNZn2iI",
   authDomain: "registro-de-usuarios-8ca22.firebaseapp.com",
@@ -18,15 +19,16 @@ let companyVisit = document.getElementById('companyVisit');
 let nameVisitor = document.getElementById('nameVisitor');
 let whoVisit = document.getElementById('whoVisit');
 let emailVisit = document.getElementById('emailVisit');
+let showCamera = document.getElementById('showCamera');
+// zona de foto
+let camera = document.getElementById('camera');
+// boton de guardar usuario
 let saveVisitor = document.getElementById('saveVisitor');
-// formulario de workers
-let companyWorker = document.getElementById('companyWorker');
-let nameWorker = document.getElementById('nameWorker');
-let saveWorker = document.getElementById('saveWorker');
-// variables para Firebase
-let database = firebase.database(); // base de datos en tiempo real
-let storage = firebase.storage(); // base de datos para archivos
-// elementos del DOM segunda vista 
+// variables para foto en JS
+let videoTracks;
+let valuePhotoV;
+
+// elementos del DOM segunda vista
 let buttonsInit = document.getElementById('buttonsInit');
 let singIn = document.getElementById('singIn');
 let initFastAccess = document.getElementById('initFastAccess');
@@ -34,8 +36,10 @@ let formAdmin = document.getElementById('formAdmin');
 let adminMail = document.getElementById('adminMail');
 let adminPassword = document.getElementById('adminPassword');
 let openPage = document.getElementById('openPage');
-// botones para volver 
+// variables para Firebase
+let database = firebase.database(); // base de datos en tiempo real
+let storage = firebase.storage(); // base de datos para archivos
+// botones para volver
 let homePage = document.getElementById('homePage');
 let goHome = document.getElementById('goHome');
 let goHomeV = document.getElementById('goHomeV');
-let goHomeW = document.getElementById('goHomeW');

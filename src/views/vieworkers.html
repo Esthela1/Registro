@@ -36,39 +36,42 @@
     <main class="container">
         <section class="row col-12 justify-content-center">
             <div>
-                <article id="containerButton">
+                <!-- <article id="containerButton">
 
                     <button type="button" class="btn btn-primary" id="visitors"> <span class="icon-people"></span> Visitantes</button>
                     <button type="button" class="btn btn-primary" id="workers"> <span class="icon-user-check"></span> CoWorkers</button>
                     <button type="button" class="btn btn-primary" id="homePage"> <span class="icon-refresh"></span> </button>
 
-                </article>
-                <article id="formVisit" class="formulario-visitors">
-                        <h6>Registro de visitantes</h6>
-                        <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1">
-                        <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1">
-                        <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1">
-                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">
-                        <button class="btn btn-outline-primary" id="showCamera"><span class="icon-camera3"></span> </button>
+                </article> -->
 
-                        <section id="camera">
-                            <video id="player" controls autoplay></video>
-                            <button id="capture">Capturar</button>
-                            <img id="perrito" src="" alt="">
-                            <canvas id="snapshot" width=320 height=240></canvas>
-                        </section>
 
-                        <button class="btn btn-info" id="saveVisitor">Registrar</button>
-                        <br>
-                        <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button>
-                </article>
+<article id="formWorker" class="formulario-workers">
+  <h6>Registro de CoWorkers</h6>
+  <input type="text" id="companyWorker" placeholder="Nombre de la empresa" class="form-control my-1">
+  <input type="text" id="nameWorker" placeholder="Tu nombre completo" class="form-control my-1">
+  <button class="btn btn-outline-primary" id="showCameraW"><span class="icon-camera3"></span> </button>
+
+  <section id="cameraW">
+    <video id="player" controls autoplay></video>
+    <button id="capture">Capturar</button>
+    <img id="perrito" src="" alt="">
+    <canvas id="snapshot" width=320 height=240></canvas>
+  </section>
+  <button class="btn btn-info" id="saveWorker">Registrar</button>
+  <br>
+  <button class="btn btn-info" id="goHomeW"> <span class="icon-home"></span> Volver</button>
+</article>
+
             </div>
         </section>
-    </main>   
+    </main>
+
+
     <!--Firestore-->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>    <!--JavaScript -->
     <script src="../scripts/credentials.js"></script>
-    <script src="../scripts/register.js"></script>
+    <script src="../scripts/registerworker.js"></script>
+    <!-- <script src="../scripts/register.js"></script> -->
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -79,5 +82,4 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

@@ -1,9 +1,18 @@
-.formulario-workers {
-  display: none;
-}
 .formulario-visitors {
-  display: none;
+ display: none;
+}
+#camera {
+ display: none;
+}
+#cameraW {
+ display: none;
+}
+#camera {
+ display: none;
+}
+#cameraW {
+ display: none;
 }
 .image-logo {
-  width: 80%;
+ width: 80%;
 }
