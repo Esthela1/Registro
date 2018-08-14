@@ -4,8 +4,10 @@ let cameraW = document.getElementById('cameraW');
 let companyWorker = document.getElementById('companyWorker');
 let nameWorker = document.getElementById('nameWorker');
 let saveWorker = document.getElementById('saveWorker');
+// variables para Firebase
+let database = firebase.database(); // base de datos en tiempo real
+let storage = firebase.storage(); // base de datos para archivos
 let goHomeW = document.getElementById('goHomeW');
-let valuePhotoW;
 
 
 goHomeW.addEventListener('click', event => {
@@ -33,10 +35,6 @@ showCameraW.addEventListener('click', event => {
     context.drawImage(player, 0, 0, snapshotCanvas.width,
         snapshotCanvas.height);
         perrito.setAttribute('src', snapshotCanvas.toDataURL('image/png'));
-        let perrito2 = perrito.src;
-        valuePhotoW=perrito2;
-        perrito.style.display = 'none';
-        //console.log(perrito2);
         snapshotCanvas.style.display = 'none';
         videoTracks.forEach((track) => {track.stop()});
         player.style.display = 'none';
@@ -44,28 +42,4 @@ showCameraW.addEventListener('click', event => {
 
   navigator.mediaDevices.getUserMedia({video: true})
       .then(handleSuccess);
-
-
-})
-
-saveWorker.addEventListener('click', event => {
-  const valuecompanyW =companyWorker.value;
-  const valuenameW = nameWorker.value;
-  if (valuecompanyW == '' ||valuenameW == '') {
-    containerButton.style.display = "block";
-    formWorker.style.display = "none";
-    alert('Tu registro NO fue completado, por favor, ingresa todos los datos requeridos');
-    } else {
-  const  registerWorkerKey = database.ref().child('Trabajadores').push().key;
-  let worker = {
-    workerName:valuenameW,
-    workerCompany:valuecompanyW,
-    workerPhoto: valuePhotoW
-  }
-  database.ref(`Trabajadores/${registerWorkerKey}`).set(worker);
-  document.getElementById('companyWorker').value = '';
-  document.getElementById('nameWorker').value = '';
-  alert('Tu registro fue exitoso')
-  location.href = '../index.html'
- }
 })
