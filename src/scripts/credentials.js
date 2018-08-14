@@ -7,6 +7,7 @@ let config = {
   messagingSenderId: "1017172818806"
 };
 firebase.initializeApp(config);
+
 // elementos del DOM
 let visitor = document.getElementById('visitors');
 let worker = document.getElementById('workers');
@@ -23,8 +24,10 @@ let showCamera = document.getElementById('showCamera');
 let camera = document.getElementById('camera');
 // boton de guardar usuario
 let saveVisitor = document.getElementById('saveVisitor');
+let endRegister = document.getElementById('endRegister');
 // variables para foto en JS
 let videoTracks;
+let valuePhotoV;
 
 // elementos del DOM segunda vista 
 let buttonsInit = document.getElementById('buttonsInit');
@@ -34,6 +37,9 @@ let formAdmin = document.getElementById('formAdmin');
 let adminMail = document.getElementById('adminMail');
 let adminPassword = document.getElementById('adminPassword');
 let openPage = document.getElementById('openPage');
+// variables para Firebase
+let baseDeDatos = firebase.database(); // base de datos en tiempo real
+let storage = firebase.storage(); // base de datos para archivos
 // botones para volver 
 let homePage = document.getElementById('homePage');
 let goHome = document.getElementById('goHome');
