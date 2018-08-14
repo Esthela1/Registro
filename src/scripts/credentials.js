@@ -26,7 +26,6 @@ let camera = document.getElementById('camera');
 let saveVisitor = document.getElementById('saveVisitor');
 let endRegister = document.getElementById('endRegister');
 // variables para foto en JS
-let videoTracks;
 let valuePhotoV;
 
 // elementos del DOM segunda vista
