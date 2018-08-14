@@ -1,6 +1,9 @@
-homePage.addEventListener('click', event =>{
+const redirectIndex = () =>{
   location.href = '../index.html'
-});
+}
+
+homePage.addEventListener('click', redirectIndex);
+endRegister.addEventListener('click', redirectIndex);
 
 visitor.addEventListener('click', event => {
   containerButton.style.display = "none";
@@ -42,6 +45,10 @@ showCamera.addEventListener('click', event => {
     context.drawImage(player, 0, 0, snapshotCanvas.width,
         snapshotCanvas.height);
         perrito.setAttribute('src', snapshotCanvas.toDataURL('image/png'));
+        let perrito2 = perrito.src;
+        valuePhotoV = perrito2;
+        perrito.style.display = 'none';
+        //console.log(valuePhotoV);
         snapshotCanvas.style.display = 'none';
         videoTracks.forEach((track)=> {track.stop()});
         player.style.display = 'none';
@@ -49,35 +56,39 @@ showCamera.addEventListener('click', event => {
   });
 
   navigator.mediaDevices.getUserMedia({video: true})
-      .then(handleSuccess);
-
-
-      saveVisitor.addEventListener('click', event => {
-        const valueCompanyV = companyVisit.value;
-        const valueNameV = nameVisitor.value;
-        const valueWhoV = whoVisit.value;
-        const valueEmailV = emailVisit.value;
-        if (valueCompanyV == '' || valueEmailV == '' || valueNameV == '' || valueWhoV == '') {
-          containerButton.style.display = "block";
-          formVisit.style.display = "none";
-          alert('Tu registro NO fue completado, por favor, ingresa todos los datos requeridos');
-          } else {
-        const registerVisitorKey = database.ref().child('Visitors').push().key;
-        let visitor = {
-          visitorName:valueNameV,
-          visitorEmail:valueEmailV,
-          visitorCompany:valueCompanyV,
-          visitorVisit:valueWhoV
-        };
-        database.ref(`Visitors/${registerVisitorKey}`).set(visitor);
-          document.getElementById('companyVisit').value = '';
-          document.getElementById('nameVisitor').value = '';
-          document.getElementById('whoVisit').value = '';
-          document.getElementById('emailVisit').value = '';
-          document.getElementById('saveVisitor').value = '';
-         containerButton.style.display = "block";
-         formVisit.style.display = "none";
-      };
-      });
-
 })
+
+const createVisitor = () => {
+  const valueCompanyV = companyVisit.value;
+  const valueNameV = nameVisitor.value;
+  const valueWhoV = whoVisit.value;
+  const valueEmailV = emailVisit.value;
+  if (valueCompanyV == '' || valueEmailV == '' || valueNameV == '' || valueWhoV == '') {    
+    containerButton.style.display = "block";
+    formVisit.style.display = "none";
+    alert('Tu registro NO fue completado, por favor, ingresa todos los datos requeridos');
+    } else {
+  const registerVisitorKey = baseDeDatos.ref().child('Visitors').push().key;
+  let visitor = {
+    visitorName:valueNameV,
+    visitorEmail:valueEmailV,
+    visitorCompany:valueCompanyV,
+    visitorVisit:valueWhoV,
+    visitorPhoto: valuePhotoV
+
+  };
+  baseDeDatos.ref(`Visitors/${registerVisitorKey}`).set(visitor);
+    document.getElementById('companyVisit').value = '';
+    document.getElementById('nameVisitor').value = '';
+    document.getElementById('whoVisit').value = '';
+    document.getElementById('emailVisit').value = '';
+    document.getElementById('saveVisitor').value = '';
+   containerButton.style.display = "block";
+   formVisit.style.display = "none";
+  alert('Tu registro fue exitoso, espera un momento por favor');
+};
+};
+saveVisitor.addEventListener('click', () => {
+  createVisitor();
+  // redirectIndex();
+});
