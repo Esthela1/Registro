@@ -16,3 +16,13 @@
 .image-logo {
  width: 80%;
 }
+.fotito {
+  width: 250px;
+  height: 250;
+  float: left;
+}
+.card-body {
+  background-color: rgba(161, 161, 161, 0.116);
+  color: rgba(54, 54, 54, 0.849);
+  font-family: Arial, Helvetica, sans-serif;
+}
