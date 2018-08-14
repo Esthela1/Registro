@@ -53,3 +53,10 @@ html [type=button] {
     width: 700px;
     height: 250px;
 }
+
+#homePage {
+    background-color: #FEC332;
+    width: 100px;
+    height: 50px;
+    object-position: 90% !important;
+}
