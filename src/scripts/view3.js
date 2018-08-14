@@ -1,13 +1,14 @@
+ window.onload = () => { 
   let start = document.getElementById('start');
   start.addEventListener('click', event => {
-    location.href ='../index.html';
+    location.href ='../views/view2.html';
   })
   let coWorkers = document.getElementById('coWorkers');
   let coVisitors = document.getElementById('coVisitors');
   let cardVisitor = document.getElementById('cardVisitor');
   let cardWorker = document.getElementById('cardWorker');
 
-  coWorkers.addEventListener('click', event =>{
+  coVisitors.addEventListener('click', event =>{
   firebase.database().ref('Visitors').on('child_added', (newVisitor) => { 
     cardVisitor.innerHTML += 
     `<div id="cardPublication-${newVisitor.val().visitorName}" class="card publication">
@@ -18,11 +19,14 @@
       <img id="perrito" src="${newVisitor.val().visitorPhoto}" alt="">
     </div> 
   </div>`
-  }) 
+  })
+  // cardWorker.style.display = 'none'; 
+  // cardVisitor.style.display = 'none';
+
 })
 
 
-coVisitors.addEventListener('click', event => {
+coWorkers.addEventListener('click', event => {
 firebase.database().ref('Workers').on('child_added', (newWorker) => {
     cardWorker.innerHTML += 
     `<div id="cardPublication-${newWorker.val().workerName}" class="card publication">
@@ -32,5 +36,10 @@ firebase.database().ref('Workers').on('child_added', (newWorker) => {
     </div> 
   </div>`
   })
+  // cardVisitor.style.display = 'none';
+  // cardWorker.style.display = 'block'; 
+ 
+
 })
 
+ }
