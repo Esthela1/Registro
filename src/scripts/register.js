@@ -50,14 +50,14 @@ showCamera.addEventListener('click', event => {
 
   navigator.mediaDevices.getUserMedia({video: true})
       .then(handleSuccess);
-    
-  
+
+
       saveVisitor.addEventListener('click', event => {
         const valueCompanyV = companyVisit.value;
         const valueNameV = nameVisitor.value;
         const valueWhoV = whoVisit.value;
         const valueEmailV = emailVisit.value;
-        if (valueCompanyV == '' || valueEmailV == '' || valueNameV == '' || valueWhoV == '') {    
+        if (valueCompanyV == '' || valueEmailV == '' || valueNameV == '' || valueWhoV == '') {
           containerButton.style.display = "block";
           formVisit.style.display = "none";
           alert('Tu registro NO fue completado, por favor, ingresa todos los datos requeridos');
@@ -79,5 +79,5 @@ showCamera.addEventListener('click', event => {
          formVisit.style.display = "none";
       };
       });
-  
+
 })

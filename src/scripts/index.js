@@ -1,6 +1,6 @@
 singIn.addEventListener('click', event => {
   buttonsInit.style.display = 'none';
-  formAdmin.style.display = 'block';  
+  formAdmin.style.display = 'block';
 })
 
 goHome.addEventListener('click', event => {

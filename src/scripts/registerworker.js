@@ -30,7 +30,7 @@ showCameraW.addEventListener('click', event => {
   };
 
   captureButton.addEventListener('click', () => {
-    let context = snapshot.getContext('2d');  
+    let context = snapshot.getContext('2d');
     // Draw the video frame to the canvas.
     context.drawImage(player, 0, 0, snapshotCanvas.width,
         snapshotCanvas.height);
@@ -43,5 +43,3 @@ showCameraW.addEventListener('click', event => {
   navigator.mediaDevices.getUserMedia({video: true})
       .then(handleSuccess);
 })
-
-

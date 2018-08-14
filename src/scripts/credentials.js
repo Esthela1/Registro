@@ -19,7 +19,7 @@ let nameVisitor = document.getElementById('nameVisitor');
 let whoVisit = document.getElementById('whoVisit');
 let emailVisit = document.getElementById('emailVisit');
 let showCamera = document.getElementById('showCamera');
-// zona de foto 
+// zona de foto
 let camera = document.getElementById('camera');
 // boton de guardar usuario
 let saveVisitor = document.getElementById('saveVisitor');
@@ -29,7 +29,7 @@ let videoTracks;
 let database = firebase.database(); // base de datos en tiempo real
 let storage = firebase.storage(); // base de datos para archivos
 
-// elementos del DOM segunda vista 
+// elementos del DOM segunda vista
 let buttonsInit = document.getElementById('buttonsInit');
 let singIn = document.getElementById('singIn');
 let initFastAccess = document.getElementById('initFastAccess');
@@ -37,7 +37,7 @@ let formAdmin = document.getElementById('formAdmin');
 let adminMail = document.getElementById('adminMail');
 let adminPassword = document.getElementById('adminPassword');
 let openPage = document.getElementById('openPage');
-// botones para volver 
+// botones para volver
 let homePage = document.getElementById('homePage');
 let goHome = document.getElementById('goHome');
 let goHomeV = document.getElementById('goHomeV');
