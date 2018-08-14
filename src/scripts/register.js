@@ -56,7 +56,6 @@ showCamera.addEventListener('click', event => {
   });
 
   navigator.mediaDevices.getUserMedia({video: true})
-      .then(handleSuccess);     
 })
 
 const createVisitor = () => {

@@ -1,6 +1,6 @@
 singIn.addEventListener('click', event => {
   buttonsInit.style.display = 'none';
-  formAdmin.style.display = 'block';  
+  formAdmin.style.display = 'block';
 })
 
 goHome.addEventListener('click', event => {
@@ -22,4 +22,4 @@ openPage.addEventListener('click', event => {
 
 initFastAccess.addEventListener('click', event => {
   location.href = 'views/view1.html'
-})
+

@@ -20,7 +20,7 @@ let nameVisitor = document.getElementById('nameVisitor');
 let whoVisit = document.getElementById('whoVisit');
 let emailVisit = document.getElementById('emailVisit');
 let showCamera = document.getElementById('showCamera');
-// zona de foto 
+// zona de foto
 let camera = document.getElementById('camera');
 // boton de guardar usuario
 let saveVisitor = document.getElementById('saveVisitor');
@@ -29,7 +29,7 @@ let endRegister = document.getElementById('endRegister');
 let videoTracks;
 let valuePhotoV;
 
-// elementos del DOM segunda vista 
+// elementos del DOM segunda vista
 let buttonsInit = document.getElementById('buttonsInit');
 let singIn = document.getElementById('singIn');
 let initFastAccess = document.getElementById('initFastAccess');

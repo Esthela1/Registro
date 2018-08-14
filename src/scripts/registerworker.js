@@ -28,7 +28,7 @@ showCameraW.addEventListener('click', event => {
   };
 
   captureButton.addEventListener('click', () => {
-    let context = snapshot.getContext('2d');  
+    let context = snapshot.getContext('2d');
     // Draw the video frame to the canvas.
     context.drawImage(player, 0, 0, snapshotCanvas.width,
         snapshotCanvas.height);
@@ -47,28 +47,6 @@ showCameraW.addEventListener('click', event => {
 
   
 })
-
-// saveWorker.addEventListener('click', event => {
-//   const valuecompanyW =companyWorker.value;
-//   const valuenameW = nameWorker.value;
-//   if (valuecompanyW == '' ||valuenameW == '') {
-//     containerButton.style.display = "block";
-//     formWorker.style.display = "none";
-//     alert('Tu registro NO fue completado, por favor, ingresa todos los datos requeridos');
-//     } else {
-//   const  registerWorkerKey = baseDeDatos.ref().child('Workers').push().key;
-//   let worker = {
-//     workerName:valuenameW,
-//     workerCompany:valuecompanyW,
-//     workerPhoto: valuePhotoW
-//   }
-//   baseDeDatos.ref(`Workers/${registerWorkerKey}`).set(worker);
-//   document.getElementById('companyWorker').value = '';
-//   document.getElementById('nameWorker').value = '';
-//   alert('Tu registro fue exitoso')
-//   location.href = '../index.html'
-//  }
-// })
 
 const createWorker = () => {
   const valuecompanyW =companyWorker.value;
@@ -94,5 +72,4 @@ saveWorker.addEventListener('click', () => {
   createWorker();
   // redirectIndex();
 });
-
 
