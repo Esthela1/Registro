@@ -18,9 +18,10 @@
     <title>Registro de Usuarios</title>
 </head>
 
-<body>   
+<body>
     <header class="container">
             <section class="row justify-content-center">
+
                     <div class="row col-12 justify-content-center">
                             <img src="../assets/images/Logo.png" alt="Fast-Access" class="img-fluid" id="logo">
                                 </div>
@@ -40,40 +41,36 @@
                 </article>
                 <article id="formVisit" class="formulario-visitors">
                         <h6>Registro de visitantes</h6>
-                        <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1"> 
-                        <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1"> 
-                        <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1"> 
-                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1"> 
+
+                        <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1">
+                        <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1">
+                        <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1">
+                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">
+
                         <button class="btn btn-outline-primary" id="showCamera"><span class="icon-camera3"></span> </button>
 
                         <section id="camera">
                             <video id="player" controls autoplay></video>
                             <button id="capture">Capturar</button>
+
+
+                            <img id="perrito" src="" alt="">
+
+
                             <canvas id="snapshot" width=320 height=240></canvas>
                         </section>
            
                         <button class="btn btn-info" id="saveVisitor">Registrar</button>
                         <br>
-                        <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button>                
-                </article>
-                <article id="formWorker" class="formulario-workers">
-                        <h6>Registro de CoWorkers</h6>
-                        <input type="text" id="companyWorker" placeholder="Nombre de la empresa" class="form-control my-1"> 
-                        <input type="text" id="nameWorker" placeholder="Tu nombre completo" class="form-control my-1"> 
-                        <button class="btn btn-outline-primary" id="showCameraW"><span class="icon-camera3"></span> </button>
 
-                        <section id="cameraW">
-                            <video id="playerW" controls autoplay></video>
-                            <button id="captureW">Capturar</button>
-                            <canvas id="snapshotW" width=320 height=240></canvas>
-                        </section>
-                        <button class="btn btn-info" id="saveWorker">Registrar</button>
-                        <br>
-                        <button class="btn btn-info" id="goHomeW"> <span class="icon-home"></span> Volver</button>                
-                </article>
+                        <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button> 
+                        <button class="btn btn'info" id="endRegister">Finalizar Registro </button>               
+                </article>               
+
             </div>
         </section>        
-    </main>
+    </main>   
+
 
 
     <!--Firestore-->
