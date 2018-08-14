@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!--Stylesheet-->
-        <link rel="stylesheet" href="assets/fonts/fonts/style.css">
-        <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css">
-        <link rel="stylesheet" href="./styles/index2.css">
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="./assets/libraries/css/bootstrap.min.css">
-    
-        <title>Registro de Usuarios</title>
-    </head>
+
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="assets/fonts/fonts/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/index.css">
+    <link rel="stylesheet" href="./styles/index2.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/libraries/css/bootstrap.min.css">
+
+    <title>Registro de Usuarios</title>
+</head>
+
 <body>
     <main>
-        <section class="container"> 
+        <section class="container">
             <section>
                 <div class="row col-12 justify-content-center">
-                <img src="assets/images/Logo.png" alt="Fast-Access" class="img-fluid" id="logo">
-                    </div>
-                    <div class="row col-12 justify-content-center">
-                <img src="./assets/images/woodtable.jpg" alt="Backgraund" id="mesa" class="img-fluid" class="rounded mx-auto d-block">
-                    </div>
+                    <img src="assets/images/Logo.png" alt="Fast-Access" class="img-fluid" id="logo">
+                </div>
+                <div class="row col-12 justify-content-center">
+                    <img src="./assets/images/woodtable.jpg" alt="Backgraund" id="mesa" class="img-fluid" class="rounded mx-auto d-block">
+                </div>
                 <section id="buttonsInit" class="row col-12 justify-content-center">
-                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="singIn" > <span class="icon-checkmark"></span> Iniciar sesión</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="initFastAccess"> <span class="icon-plus2"></span> Registrar Visita</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="singIn">
+                        <span class="icon-checkmark"></span> Iniciar sesión</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="initFastAccess">
+                        <span class="icon-plus2"></span> Registrar Visita</button>
                 </section>
             </section>
         </section>
@@ -36,23 +40,26 @@
         <section class="row col justify-content-center">
             <article id="formAdmin" class="formulario-admin">
                 <h3>Inicio de sesión</h3>
-                <input type="text" id="adminMail" placeholder="correo@mail.com" class="form-control"> 
+                <input type="text" id="adminMail" placeholder="correo@mail.com" class="form-control">
                 <input type="text" id="adminPassword" placeholder="**********" class="form-control">
                 <button class="btn btn-info btn-lg btn-warning" id="openPage">Entrar</button>
                 <br>
-                <button class="btn btn-info btn-lg btn-warning" id="goHome"> <span class="icon-home"></span> Volver</button>
+                <button class="btn btn-info btn-lg btn-warning" id="goHome">
+                    <span class="icon-home"></span> Volver</button>
             </article>
         </section>
     </section>
     <!--Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script> 
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <!--Java Scrip-->
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="./assets/libraries/js/bootstrap.min.js"></script> 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./assets/libraries/js/bootstrap.min.js"></script>
     <script src="scripts/credentials.js"></script>
-    <script src="scripts/index.js"></script>    
-   </body>
+    <script src="scripts/index.js"></script>
+</body>
 
 </html>

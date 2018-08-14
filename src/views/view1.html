@@ -10,7 +10,7 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="../assets/fonts/fonts/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/main.css" />
-    <link rel="stylesheet" href="./styles/index2.css">
+    <link rel="stylesheet" href="../styles/index2.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
@@ -20,13 +20,9 @@
 
 <body>
     <header class="container">
-            <section class="row justify-content-center">
-
-                    <div class="row col-12 justify-content-center">
-                            <img src="../assets/images/Logo.png" alt="Fast-Access" class="img-fluid" id="logo">
-                                </div>
-                    
-                </section>        
+            <div class="row col justify-content-center">
+                <img src="../assets/images/Logo.png" alt="Fast-Access" class="img-fluid" id="logo2">
+            </div>
     </header>
 
     <main class="container">
@@ -34,47 +30,55 @@
             <div>
                 <article id="containerButton" class="row col-12 justify-content-center">
 
-                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="visitors"> <span class="icon-people"></span> Visitantes</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="workers"> <span class="icon-user-check"></span> CoWorkers</button>
-                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="homePage"> <span class="icon-refresh"></span> </button>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="visitors">
+                        <span class="icon-people"></span> Visitantes</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="workers">
+                        <span class="icon-user-check"></span> CoWorkers</button>
+                    <button type="button" class="btn btn-primary btn-lg btn-warning" id="homePage">
+                        <span class="icon-refresh"></span>
+                    </button>
 
                 </article>
                 <article id="formVisit" class="formulario-visitors">
-                        <h6>Registro de visitantes</h6>
+                    <h6>Registro de visitantes</h6>
 
-                        <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-1">
-                        <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-1">
-                        <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-1">
-                        <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-1">
+                    <input type="text" id="companyVisit" placeholder="Empresa que visitas" class="form-control my-2">
+                    <input type="text" id="nameVisitor" placeholder="Tu nombre completo" class="form-control my-2">
+                    <input type="text" id="whoVisit" placeholder="Persona que visitas" class="form-control my-2">
+                    <input type="text" id="emailVisit" placeholder="Tu correo electronico" class="form-control my-2">
 
-                        <button class="btn btn-outline-primary" id="showCamera"><span class="icon-camera3"></span> </button>
+                    <button class="btn btn-primary btn-lg btn-warning " id="showCamera">
+                        <span class="icon-camera3"></span>
+                    </button>
 
-                        <section id="camera">
-                            <video id="player" controls autoplay></video>
-                            <button id="capture">Capturar</button>
+                    <section id="camera">
+                        <video id="player" controls autoplay></video>
+                        <button id="capture">Capturar</button>
 
 
-                            <img id="perrito" src="" alt="">
+                        <img id="perrito" src="" alt="">
 
 
-                            <canvas id="snapshot" width=320 height=240></canvas>
-                        </section>
-           
-                        <button class="btn btn-info" id="saveVisitor">Registrar</button>
-                        <br>
+                        <canvas id="snapshot" width=320 height=240></canvas>
+                    </section>
 
-                        <button class="btn btn-info" id="goHomeV"> <span class="icon-home"></span> Volver</button> 
-                        <button class="btn btn'info" id="endRegister">Finalizar Registro </button>               
-                </article>               
+                    <button class="btn btn-primary btn-lg btn-warning" id="saveVisitor">Registrar</button>
+                    <br>
+
+                    <button class="btn btn-primary btn-lg btn-warning" id="goHomeV">
+                        <span class="icon-home"></span> Volver</button>
+                    <button class="btn btn-primary btn-lg btn-warning" id="endRegister">Finalizar Registro </button>
+                </article>
 
             </div>
-        </section>        
-    </main>   
+        </section>
+    </main>
 
 
 
     <!--Firestore-->
-    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>    <!--JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <!--JavaScript -->
     <script src="../scripts/credentials.js"></script>
     <script src="../scripts/register.js"></script>
 
