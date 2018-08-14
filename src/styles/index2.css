@@ -5,6 +5,7 @@ main {
 #logo {
     width: 700px;
     height: 250px;
+    margin-top: 10% !important;
 }
 
 #mesa {
@@ -54,9 +55,9 @@ html [type=button] {
     height: 250px;
 }
 
-#homePage {
+#homePage,
+#goHomeW {
     background-color: #FEC332;
     width: 100px;
     height: 50px;
-    object-position: 90% !important;
 }
