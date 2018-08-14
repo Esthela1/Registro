@@ -22,4 +22,4 @@ openPage.addEventListener('click', event => {
 
 initFastAccess.addEventListener('click', event => {
   location.href = 'views/view1.html'
-
+})
